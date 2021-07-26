@@ -11,11 +11,11 @@ jobs:
           node -v
           npm -v
           python -v
-      - name: python processor
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.x' 
-        run: |
-          import platform
-          print(platform.processor())
-        shell: python
+  run-wind-ps:
+    runs-on: windows-latest
+    steps:
+      - name: list dir
+        run: Get-Location
+      - name: list dir bash
+        run: pwd
+        shell: bash 
