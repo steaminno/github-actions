@@ -11,6 +11,7 @@ jobs:
           node -v
           npm -v
       - name: python processor
+      - uses: actions/setup-python@v2
         with:
           python-version: '3.x' 
         run: |
