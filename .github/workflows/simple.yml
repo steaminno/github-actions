@@ -10,6 +10,7 @@ jobs:
         run: |
           node -v
           npm -v
+          python -v
       - name: python processor
       - uses: actions/setup-python@v2
         with:
