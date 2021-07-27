@@ -5,7 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "hello aai"
+        run: echo "hello aai"      
+      - name: echo a new string
+        run: echo "hello Mac"
       - name: multiline script
         run: |
           node -v
